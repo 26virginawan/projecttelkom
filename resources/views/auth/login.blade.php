@@ -22,14 +22,11 @@
 </head>
 
 <body>
-    <div style="margin-top:100px;" class="container">
+    <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div style="text-align:center;">
-                        <br>
-                        <h3>Login Admin</h3>
-                    </div>
+                    <div class="card-header">{{ __('Login') }}</div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('login') }}">
