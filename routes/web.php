@@ -19,3 +19,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/barang', 'BarangController@index');
+Route::get('/caribarang', 'BarangController@cari');
+
+Route::get('/add', 'BarangController@add');
+Route::post('/barang/create', 'BarangController@create');
+Route::get('/barang/delete/{id}', 'BarangController@delete');
+Route::post('/barang/update/{id}', 'BarangController@update');
+Route::get('/edit/{id}', 'BarangController@edit');
