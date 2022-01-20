@@ -1,116 +1,66 @@
 @extends('layouts.app')
 
-
 @section('content')
+<section class="content">
+    <br><br>
+    <h2>Data Utama</h2>
+    <br><br>
+    <div class="container">
 
-
-
-<!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">Beranda</h1>
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+            <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-light text-dark font-weight-bold">
+                    <div class="inner">
+                        <h5>Data Utama Tahun 2018</h5>
+                    </div>
+                    <!-- <div class="icon">
+                        <i class="ion ion-bag"></i>
+                    </div> -->
+                    <a href="/datautama2018" class="small-box-footer">More info <i
+                            class="fas fa-arrow-circle-right"></i></a>
                 </div>
-                <!-- /.col -->
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                        <form class="form-inline ml-3">
-                            <div class="input-group input-group-sm">
-                                <input class="form-control form-control-navbar" type="search" placeholder="Search"
-                                    aria-label="Search" />
-                                <div class="input-group-append">
-                                    <button class="btn btn-navbar" type="submit">
-                                        <i class="fas fa-search"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </ol>
-                </div>
-                <!-- /.col -->
             </div>
-            <!-- /.row -->
+            <!-- ./col -->
+            <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-light text-dark font-weight-bold">
+                    <div class="inner">
+
+                        <h5>Data Utama Tahun 2019</h5>
+                    </div>
+                    <a href="/datautama2019" class="small-box-footer">More info <i
+                            class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-light text-dark font-weight-bold">
+                    <div class="inner">
+
+                        <h5>Data Utama Tahun 2020</h5>
+                    </div>
+                    <a href="/datautama2020" class="small-box-footer">More info <i
+                            class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-light text-dark font-weight-bold">
+                    <div class="inner">
+
+                        <h5>Data Utama tahun 2021</h5>
+                    </div>
+                    <a href="/datautama2021" class="small-box-footer">More info <i
+                            class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- ./col -->
         </div>
-        <!-- /.container-fluid -->
     </div>
-    <!-- /.content-header -->
 
-    <!-- Main content -->
-    <section class="content">
-        <div class="container-fluid">
-            <!-- Small boxes (Stat box) -->
-            <div class="row">
-                <div class="col-lg-4 col-8">
-                    <!-- small box -->
-                    <div class="small-box bg-info">
-                        <div class="inner">
-                            <br>
-                            <h4>Data Barang</h4>
-                            <br>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-folder"></i>
-                        </div>
-                        <a href="#" class="small-box-footer">
-                            More info
-                            <i class="fas fa-arrow-circle-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- ./col -->
-                <div class="col-lg-4 col-6">
-                    <!-- small box -->
-                    <div class="small-box bg-success">
-                        <div class="inner">
-                            <br>
-                            <h4>Data Bahan</h4>
-                            <br>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-stats-bars"></i>
-                        </div>
-                        <a href="#" class="small-box-footer">
-                            More info
-                            <i class="fas fa-arrow-circle-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-6">
-                    <!-- small box -->
-                    <div class="small-box bg-danger">
-                        <div class="inner">
-                            <br>
-                            <h4>Transaksi</h4>
-                            <br>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-folder"></i>
-                        </div>
-                        <a href="#" class="small-box-footer">
-                            More info
-                            <i class="fas fa-arrow-circle-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-            <!-- /.row -->
-            <!-- Main row -->
-
-            <!-- /.row (main row) -->
-        </div>
-        <!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-</div>
-
-<!-- Control Sidebar -->
-<aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-</aside>
-<!-- /.control-sidebar -->
-</div>
+</section>
 @endsection
