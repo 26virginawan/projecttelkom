@@ -1,12 +1,15 @@
-@extends('layouts.app')
+@extends('layouts.sidebar')
 
 
 @section('content')
-<div class="content">
-    <!-- <div class="row"> -->
-    <div class="col-md-12 ">
-        <div class="row flex-grow">
-            <div class="col-12">
+<div class="content-body">
+
+    <div class="container-fluid">
+        <div class="row">
+
+
+
+            <div class="col-10">
                 <div class="card">
                     <div class="card-header">
                         <br>
@@ -15,11 +18,11 @@
                     <div class="card-body">
                         <form action="/angsur/create" method="post">
                             @csrf
-                            <div class="justify-content-center row">
-                                <div class="col-lg-7 col-md-12 col-sm-12 mb-4">
-                                    <div class="card card-noborder b-radius">
-                                        <div class="card-body">
 
+                            <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
+                                <div class="card card-noborder b-radius">
+                                    <div class="card-body">
+                                        <div class="basic-form">
                                             <div class="form-group row">
                                                 <div class="col-lg-11 col-md-6 col-sm-12 space-bottom">
                                                     <div class="row">
@@ -196,7 +199,8 @@
                                             <div class="form-group row">
                                                 <div class="col-lg-11 col-md-6 col-sm-12 space-bottom">
                                                     <div class="row">
-                                                        <label class="col-12 font-weight-bold col-form-label">Adj Pokok
+                                                        <label class="col-12 font-weight-bold col-form-label">Adj
+                                                            Pokok
                                                         </label>
                                                         <div class="col-12">
                                                             <input type="text" class="form-control" name="adj_pokok"
@@ -208,7 +212,8 @@
                                             <div class="form-group row">
                                                 <div class="col-lg-11 col-md-6 col-sm-12 space-bottom">
                                                     <div class="row">
-                                                        <label class="col-12 font-weight-bold col-form-label">Adj Jasa
+                                                        <label class="col-12 font-weight-bold col-form-label">Adj
+                                                            Jasa
                                                         </label>
                                                         <div class="col-12">
                                                             <input type="text" class="form-control" name="adj_jasa"
@@ -286,6 +291,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
 
                         </form>

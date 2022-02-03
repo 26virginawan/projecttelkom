@@ -7,6 +7,7 @@ use App\data_nunggak2010;
 use App\data_nunggak2011;
 use App\data_nunggak2012;
 use App\data_nunggak2013;
+use App\data_nunggak2014;
 
 class HomeController extends Controller
 {
@@ -36,13 +37,15 @@ class HomeController extends Controller
         $data_nunggak2011 = data_nunggak2011::get();
         $data_nunggak2012 = data_nunggak2012::get();
         $data_nunggak2013 = data_nunggak2013::get();
+        $data_nunggak2014 = data_nunggak2014::get();
         return view(
             '/datanunggak.index',
             compact(
                 'data_nunggak2010',
                 'data_nunggak2011',
                 'data_nunggak2012',
-                'data_nunggak2013'
+                'data_nunggak2013',
+                'data_nunggak2014'
             )
         );
     }

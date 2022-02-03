@@ -1,64 +1,59 @@
-@extends('layouts.app')
+@extends('layouts.sidebar')
 
 @section('content')
-<section class="content">
-    <br><br>
-    <h2>Data Utama</h2>
-    <br><br>
-    <div class="container">
+<section class="content-body">
+    <div class="container-fluid mt-3">
 
         <!-- Small boxes (Stat box) -->
         <div class="row">
-            <div class="col-lg-3 col-6">
-                <!-- small box -->
-                <div class="small-box bg-light text-dark font-weight-bold">
-                    <div class="inner">
-                        <h5>Data Utama Tahun 2018</h5>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card gradient-1">
+                    <div class="card-body">
+                        <h3 class="card-title text-white">Data Angsur</h3>
+                        <div class="d-inline-block">
+                            <h2 class="text-white">4565</h2>
+                            <a href="/dataangsur" class="text-white mb-0">more info</a>
+                        </div>
+                        <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span>
                     </div>
-                    <!-- <div class="icon">
-                        <i class="ion ion-bag"></i>
-                    </div> -->
-                    <a href="/datautama2018" class="small-box-footer">More info <i
-                            class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
-            <!-- ./col -->
-            <div class="col-lg-3 col-6">
-                <!-- small box -->
-                <div class="small-box bg-light text-dark font-weight-bold">
-                    <div class="inner">
-
-                        <h5>Data Utama Tahun 2019</h5>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card gradient-2">
+                    <div class="card-body">
+                        <h3 class="card-title text-white">Net Profit</h3>
+                        <div class="d-inline-block">
+                            <h2 class="text-white">$ 8541</h2>
+                            <p class="text-white mb-0">Jan - March 2019</p>
+                        </div>
+                        <span class="float-right display-5 opacity-5"><i class="fa fa-money"></i></span>
                     </div>
-                    <a href="/datautama2019" class="small-box-footer">More info <i
-                            class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
-            <!-- ./col -->
-            <div class="col-lg-3 col-6">
-                <!-- small box -->
-                <div class="small-box bg-light text-dark font-weight-bold">
-                    <div class="inner">
-
-                        <h5>Data Utama Tahun 2020</h5>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card gradient-3">
+                    <div class="card-body">
+                        <h3 class="card-title text-white">New Customers</h3>
+                        <div class="d-inline-block">
+                            <h2 class="text-white">4565</h2>
+                            <p class="text-white mb-0">Jan - March 2019</p>
+                        </div>
+                        <span class="float-right display-5 opacity-5"><i class="fa fa-users"></i></span>
                     </div>
-                    <a href="/datautama2020" class="small-box-footer">More info <i
-                            class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
-            <!-- ./col -->
-            <div class="col-lg-3 col-6">
-                <!-- small box -->
-                <div class="small-box bg-light text-dark font-weight-bold">
-                    <div class="inner">
-
-                        <h5>Data Utama tahun 2021</h5>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card gradient-4">
+                    <div class="card-body">
+                        <h3 class="card-title text-white">Customer Satisfaction</h3>
+                        <div class="d-inline-block">
+                            <h2 class="text-white">99%</h2>
+                            <p class="text-white mb-0">Jan - March 2019</p>
+                        </div>
+                        <span class="float-right display-5 opacity-5"><i class="fa fa-heart"></i></span>
                     </div>
-                    <a href="/datautama2021" class="small-box-footer">More info <i
-                            class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
-            <!-- ./col -->
         </div>
     </div>
 

@@ -13,7 +13,7 @@ class DataNunggak2013Controller extends Controller
 {
     public function index()
     {
-        $data_nunggak2013 = data_nunggak2013::sortable()->paginate(50);
+        $data_nunggak2013 = data_nunggak2013::sortable()->paginate(10);
         return view(
             'datanunggak.thn2013.index',
             ['data_nunggak2013' => $data_nunggak2013],

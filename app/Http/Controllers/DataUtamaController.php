@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Session;
 
 use App\data_utama2020;
+use App\data_utama2021;
 use Illuminate\Support\Facades\DB;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Http\Request;
@@ -13,11 +14,11 @@ class DataUtamaController extends Controller
 {
     public function index()
     {
-        $data_utama2020 = data_utama2020::sortable()->paginate(50);
+        $data_utama2020 = data_utama2020::get();
+        $data_utama2021 = data_utama2021::get();
         return view(
-            'datautama.thn2020.index',
-            ['data_utama2020' => $data_utama2020],
-            compact('data_utama2020')
+            'datautama.datautama',
+            compact('data_utama2020', 'data_utama2021')
         );
     }
     public function cariData(Request $request)

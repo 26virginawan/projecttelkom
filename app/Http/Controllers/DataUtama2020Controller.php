@@ -20,20 +20,6 @@ class DataUtama2020Controller extends Controller
             compact('data_utama2020')
         );
     }
-    public function cariData(Request $request)
-    {
-        $cari = $request->cari;
-        $data_utama2020 = DB::table('data_utama2020')
-            ->where('kode', 'like', '%' . $cari . '%')
-            ->orWhere('nama', 'like', '%' . $cari . '%')
-            ->orWhere('thn_salur', 'like', '%' . $cari . '%')
-            ->orWhere('id', 'like', '%' . $cari . '%')
-            ->paginate(50);
-
-        return view('datautama.thn2020.index', [
-            'data_utama2020' => $data_utama2020,
-        ]);
-    }
     public function add()
     {
         return view('datautama.thn2020.create');
@@ -76,38 +62,5 @@ class DataUtama2020Controller extends Controller
         $data_utama2020->call_c = $request->call_c;
         $data_utama2020->save();
         return redirect('/datautama2020');
-    }
-    public function export_excel()
-    {
-        return Excel::download(new AngsurExport(), 'datautama2020.xlsx');
-    }
-
-    public function import_excel(Request $request)
-    {
-        // validasi
-        $this->validate($request, [
-            'file' => 'required|mimes:csv,xls,xlsx',
-        ]);
-
-        // menangkap file excel
-        $file = $request->file('file');
-
-        // membuat nama file unik
-        $nama_file = rand() . $file->getClientOriginalName();
-
-        // upload ke folder file_siswa di dalam folder public
-        $file->move('file_angsur', $nama_file);
-
-        // import data
-        Excel::import(
-            new AngsurImport(),
-            public_path('/file_angsur/' . $nama_file)
-        );
-
-        // notifikasi dengan session
-        Session::flash('sukses', 'Data angsur Berhasil Diimport!');
-
-        // alihkan halaman kembali
-        return redirect('/dataangsur');
     }
 }

@@ -1,26 +1,26 @@
-@extends('layouts.app')
+@extends('layouts.sidebar')
 
 
 @section('content')
-<div class="content">
-    <!-- <div class="row"> -->
-    <div class="col-md-12 ">
-        <div class="row flex-grow">
-            <div class="col-12">
+<div class="content-body">
+
+    <div class="container-fluid">
+        <div class="row">
+
+
+
+            <div class="col-10">
                 <div class="card">
-                    <div class="card-header">
-                        <br>
-                        <h4 class="card-title">Tambah Data Mitra Nunggak Tahun 2010</h4>
-                    </div>
                     <div class="card-body">
-                        <form action="/datanunggak2010/create" method="post">
+                        <h4 class="card-title">Tambah Data Nunggak 2010</h4>
+                        <br>
+                        <form action="/angsur/create" method="post">
                             @csrf
-                            <div class="justify-content-center row">
-                                <div class="col-lg-7 col-md-12 col-sm-12 mb-4">
-                                    <div class="card card-noborder b-radius">
-                                        <div class="card-body">
 
-
+                            <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
+                                <div class="card card-noborder b-radius">
+                                    <div class="card-body">
+                                        <div class="basic-form">
                                             <div class="form-group row">
                                                 <div class="col-lg-11 col-md-6 col-sm-12 space-bottom">
                                                     <div class="row">
@@ -132,6 +132,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
 
                         </form>
