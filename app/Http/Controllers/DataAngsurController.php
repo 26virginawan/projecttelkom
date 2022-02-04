@@ -15,7 +15,7 @@ class DataAngsurController extends Controller
 {
     public function index()
     {
-        $data_angsur = data_angsur::sortable()->paginate(100);
+        $data_angsur = data_angsur::sortable()->paginate(30);
         return view(
             'angsur.index',
             ['data_angsur' => $data_angsur],

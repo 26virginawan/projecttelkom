@@ -4,6 +4,16 @@ namespace App\Http\Controllers;
 
 use Session;
 
+use App\data_utama2010;
+use App\data_utama2011;
+use App\data_utama2012;
+use App\data_utama2013;
+use App\data_utama2014;
+use App\data_utama2015;
+use App\data_utama2016;
+use App\data_utama2017;
+use App\data_utama2018;
+use App\data_utama2019;
 use App\data_utama2020;
 use App\data_utama2021;
 use Illuminate\Support\Facades\DB;
@@ -14,11 +24,34 @@ class DataUtamaController extends Controller
 {
     public function index()
     {
+        $data_utama2010 = data_utama2010::get();
+        $data_utama2011 = data_utama2011::get();
+        $data_utama2012 = data_utama2012::get();
+        $data_utama2013 = data_utama2013::get();
+        $data_utama2014 = data_utama2014::get();
+        $data_utama2015 = data_utama2015::get();
+        $data_utama2016 = data_utama2016::get();
+        $data_utama2017 = data_utama2017::get();
+        $data_utama2018 = data_utama2018::get();
+        $data_utama2019 = data_utama2019::get();
         $data_utama2020 = data_utama2020::get();
         $data_utama2021 = data_utama2021::get();
         return view(
             'datautama.datautama',
-            compact('data_utama2020', 'data_utama2021')
+            compact(
+                'data_utama2010',
+                'data_utama2011',
+                'data_utama2012',
+                'data_utama2013',
+                'data_utama2014',
+                'data_utama2015',
+                'data_utama2016',
+                'data_utama2017',
+                'data_utama2018',
+                'data_utama2019',
+                'data_utama2020',
+                'data_utama2021'
+            )
         );
     }
     public function cariData(Request $request)

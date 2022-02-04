@@ -11,14 +11,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h3 class="card-title">Data Utama Tahun 2010</h3>
-                        <br>
 
-
-                        <div class="general-button">
-                            <button type="button" class="btn mb-1 btn-success"><a href="/addutama2020"
-                                    class="text-white icon-plus">Tambah
-                                    Data</a></button>
-                        </div>
                         <br>
 
                         <div class="table-responsive">

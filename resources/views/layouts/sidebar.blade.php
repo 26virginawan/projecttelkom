@@ -85,6 +85,16 @@
                         </a>
                     </li>
                     <li>
+                        <a href="/datautama" aria-expanded="false">
+                            <i class="icon-folder-close menu-icon"></i><span class="nav-text">Data Utama</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/dataresume" aria-expanded="false">
+                            <i class="icon-folder-close menu-icon"></i><span class="nav-text">Data Resume</span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="/dataangsur" aria-expanded="false">
                             <i class="icon-folder-close menu-icon"></i><span class="nav-text">Data Angsur</span>
                         </a>
@@ -95,11 +105,8 @@
                             <i class="icon-folder-close menu-icon"></i><span class="nav-text">Data Salur</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="/dataresume" aria-expanded="false">
-                            <i class="icon-folder-close menu-icon"></i><span class="nav-text">Data Resume</span>
-                        </a>
-                    </li>
+
+
 
                     <li class="mega-menu mega-menu-sm">
                         <a class="has-arrow" href="/datanunggak" aria-expanded="false">
@@ -120,8 +127,8 @@
                             <li><a href="/datanunggak2021">Data Nunggak Tahun 2021</a></li>
                         </ul>
                     </li>
-                    <li class="mega-menu mega-menu-sm">
-                        <a class="has-arrow" href="/datautama" aria-expanded="false">
+                    <!-- <li class="mega-menu mega-menu-sm">
+                        <a class="has-arrow" href="#" aria-expanded="false">
                             <i class="icon-folder-close menu-icon"></i><span class="nav-text">Data Utama</span>
                         </a>
                         <ul aria-expanded="false">
@@ -138,7 +145,7 @@
                             <li><a href="/datautama2020">Data Utama Tahun 2020</a></li>
                             <li><a href="/datautama2021">Data Utama Tahun 2021</a></li>
                         </ul>
-                    </li>
+                    </li> -->
 
                 </ul>
             </div>

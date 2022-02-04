@@ -12,7 +12,7 @@ class DataSalurController extends Controller
 {
     public function index()
     {
-        $data_salur = data_salur::sortable()->paginate(100);
+        $data_salur = data_salur::sortable()->paginate(25);
         return view(
             'salur.index',
             ['data_salur' => $data_salur],

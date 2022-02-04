@@ -13,10 +13,10 @@
                 <div class="card">
                     <div class="card-header">
                         <br>
-                        <h4 class="card-title">Tambah Data Utama 2010</h4>
+                        <h4 class="card-title">Tambah Data Utama 2012</h4>
                     </div>
                     <div class="card-body">
-                        <form action="/datautama2010/create" method="post">
+                        <form action="/datautama2012/create" method="post">
                             @csrf
 
                             <div class="col-lg-12 col-md-12 col-sm-12 mb-4">

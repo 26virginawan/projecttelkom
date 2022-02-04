@@ -9,48 +9,56 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="card gradient-1">
                     <div class="card-body">
-                        <h3 class="card-title text-white">Data Angsur</h3>
+                        <h3 class="card-title text-white">Data Utama</h3>
                         <div class="d-inline-block">
-                            <h2 class="text-white">4565</h2>
-                            <a href="/dataangsur" class="text-white mb-0">more info</a>
+                            <h4>
+                                <a href="/datautama" class="text-white mb-0">more info</a>
+                                <a href="/datautama" class="text-white fa fa-arrow-right"></a>
+                            </h4>
                         </div>
-                        <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span>
+                        <span class="float-right display-5 opacity-5"><i class="fa fa-folder"></i></span>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="card gradient-2">
                     <div class="card-body">
-                        <h3 class="card-title text-white">Net Profit</h3>
+                        <h3 class="card-title text-white">Data Resume</h3>
                         <div class="d-inline-block">
-                            <h2 class="text-white">$ 8541</h2>
-                            <p class="text-white mb-0">Jan - March 2019</p>
+                            <h4>
+                                <a href="/dataresume" class="text-white mb-0">more info</a>
+                                <a href="/dataresume" class="text-white fa fa-arrow-right"></a>
+                            </h4>
                         </div>
-                        <span class="float-right display-5 opacity-5"><i class="fa fa-money"></i></span>
+                        <span class="float-right display-5 opacity-5"><i class="fa fa-folder"></i></span>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="card gradient-3">
                     <div class="card-body">
-                        <h3 class="card-title text-white">New Customers</h3>
+                        <h3 class="card-title text-white">Data Salur</h3>
                         <div class="d-inline-block">
-                            <h2 class="text-white">4565</h2>
-                            <p class="text-white mb-0">Jan - March 2019</p>
+                            <h4>
+                                <a href="/datasalur" class="text-white mb-0">more info</a>
+                                <a href="/datasalur" class="text-white fa fa-arrow-right"></a>
+                            </h4>
                         </div>
-                        <span class="float-right display-5 opacity-5"><i class="fa fa-users"></i></span>
+                        <span class="float-right display-5 opacity-5"><i class="fa fa-folder"></i></span>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="card gradient-4">
                     <div class="card-body">
-                        <h3 class="card-title text-white">Customer Satisfaction</h3>
+                        <h3 class="card-title text-white">Data Angsur</h3>
                         <div class="d-inline-block">
-                            <h2 class="text-white">99%</h2>
-                            <p class="text-white mb-0">Jan - March 2019</p>
+                            <h4>
+                                <a href="/dataangsur" class="text-white mb-0">more info</a>
+                                <a href="/dataangsur" class="text-white fa fa-arrow-right"></a>
+                            </h4>
                         </div>
-                        <span class="float-right display-5 opacity-5"><i class="fa fa-heart"></i></span>
+                        <span class="float-right display-5 opacity-5"><i class="fa fa-folder"></i></span>
                     </div>
                 </div>
             </div>

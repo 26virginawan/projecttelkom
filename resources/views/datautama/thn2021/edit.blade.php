@@ -10,10 +10,10 @@
                 <div class="card">
                     <div class="card-header">
                         <br>
-                        <h4 class="card-title">Edit Data Angsur</h4>
+                        <h4 class="card-title">Edit Data Utama Tahun 2021</h4>
                     </div>
                     <div class="card-body">
-                        <form action="/datautama2020/update/{{$data_utama2020->id}}" method="post">
+                        <form action="/datautama2021/update/{{$data_utama2021->id}}" method="post">
                             @csrf
                             <div class="justify-content-center row">
                                 <div class="col-lg-7 col-md-12 col-sm-12 mb-4">
@@ -29,8 +29,8 @@
 
                                                             <div class="input-group-append">
                                                                 <select class="form-control" name="month">
-                                                                    <option selected="{{$data_utama2020->month}}">
-                                                                        {{$data_utama2020->month}}
+                                                                    <option selected="{{$data_utama2021->month}}">
+                                                                        {{$data_utama2021->month}}
                                                                     </option>
                                                                     <option value="Januari">Januari</option>
                                                                     <option value="Februari">Februari</option>
@@ -58,7 +58,7 @@
                                                         </label>
                                                         <div class="col-12">
                                                             <input type="text" class="form-control" name="target"
-                                                                value="{{$data_utama2020->target}}"></br>
+                                                                value="{{$data_utama2021->target}}"></br>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -70,7 +70,7 @@
                                                         </label>
                                                         <div class="col-12">
                                                             <input type="text" class="form-control" name="relasi"
-                                                                value="{{$data_utama2020->relasi}}"></br>
+                                                                value="{{$data_utama2021->relasi}}"></br>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -82,7 +82,7 @@
                                                         </label>
                                                         <div class="col-12">
                                                             <input type="text" class="form-control" name="CALL_M"
-                                                                value="{{$data_utama2020->CALL_M}}"></br>
+                                                                value="{{$data_utama2021->CALL_M}}"></br>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -94,7 +94,7 @@
                                                         </label>
                                                         <div class="col-12">
                                                             <input type="text" class="form-control" name="CALL_C"
-                                                                value="{{$data_utama2020->CALL_C}}"></br>
+                                                                value="{{$data_utama2021->CALL_C}}"></br>
                                                         </div>
                                                     </div>
                                                 </div>

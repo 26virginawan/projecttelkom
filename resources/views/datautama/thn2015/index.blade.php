@@ -10,16 +10,9 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h3 class="card-title">Data Utama Tahun 2010</h3>
+                        <h3 class="card-title">Data Utama Tahun 2015</h3>
                         <br>
 
-
-                        <div class="general-button">
-                            <button type="button" class="btn mb-1 btn-success"><a href="/addutama2020"
-                                    class="text-white icon-plus">Tambah
-                                    Data</a></button>
-                        </div>
-                        <br>
 
                         <div class="table-responsive">
                             <table class="table table-striped table-bordered ">
@@ -37,15 +30,15 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($data_utama2010 as $b)
+                                    @foreach($data_utama2015 as $b)
                                     <tr>
                                         <td>{{$b->month}}</td>
                                         <td>{{$b->target}}</td>
                                         <td>{{$b->relasi}}</td>
                                         <td>{{$b->COLL_M}}</td>
                                         <td>{{$b->COLL_C}}</td>
-                                        <td><a href="editutama2010/{{$b->id}}" class="btn btn-warning">Edit</a>
-                                            <a href="datautama2010/delete/{{ $b->id }}" class="btn btn-danger"
+                                        <td><a href="editutama2015/{{$b->id}}" class="btn btn-warning">Edit</a>
+                                            <a href="datautama2015/delete/{{ $b->id }}" class="btn btn-danger"
                                                 onclick="return confirm('Anda yakin ingin menghapus data ini?')">Hapus</a>
                                             <!-- <form action="salur/delete/{{$b->id}}" class=" btn btn-danger">
                                         <button class="dropdown-item " Hapus </button>
@@ -58,8 +51,8 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            Jumlah Data : {{ $data_utama2010->total() }} <br> <br>
-                            {{ $data_utama2010->links() }}
+                            Jumlah Data : {{ $data_utama2015->total() }} <br> <br>
+                            {{ $data_utama2015->links() }}
                         </div>
                     </div>
                 </div>

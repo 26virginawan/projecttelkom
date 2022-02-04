@@ -18,30 +18,29 @@
                     <div class="card-body">
 
                         <h3>Data Salur</h3>
+                        <div class="general-button">
 
-
-
-                        <table>
-
-                            <tr>
-                                <td><a href="/addangsur" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i>
-                                        Tambah Data</a></td>
-                                <td><a href="angsur/export_excel" class="btn btn-success btn-sm"><i
-                                            class="fas fa-file-excel"></i> Export
-                                        Data</a></td>
-                            </tr>
                             <div class="col-sm-4 offset-sm-8">
                                 <form action="/cariangsur" method="get">
+
                                     <div class="input-group">
-                                        <input type="text" class="form-control" name="cari">
+                                        <input type="text" class="form-control" name="cari"
+                                            placeholder="masukkan pencarian">
                                         <span class="input-group-append">
-                                            <button class="btn btn-secondary" type="submit">Search</button>
+                                            <button class="btn btn-secondary text-white" type="submit">Search</button>
                                         </span>
                                     </div>
 
+
                                 </form>
                             </div>
-                        </table>
+                            <button type="button" class="btn mb-1 btn-primary"><a href="/addangsur"
+                                    class="text-white"><i class="fa fa-plus  text-white"></i>
+                                    Tambah Data</a></button>
+                            <button type="button" class="btn mb-1 btn-success"><a href="angsur/export_excel"
+                                    class="text-white"><i class="fa fa-file-excel-o  text-white"></i>
+                                    Export Excell</a></button>
+                        </div>
                         <br>
                         <br>
                         <div class="table-responsive">

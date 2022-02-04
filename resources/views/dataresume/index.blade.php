@@ -14,9 +14,9 @@
                         <br>
 
                         <div class="general-button">
-                            <button type="button" class="btn mb-1 btn-success"><a href="/addnunggak2016"
-                                    class="text-white icon-plus">Tambah
-                                    Data</a></button>
+                            <button type="button" class="btn mb-1 btn-primary"><a href="/addangsur"
+                                    class="text-white"><i class="fa fa-plus  text-white"></i>
+                                    Tambah Data</a></button>
                         </div>
                         <br>
 
